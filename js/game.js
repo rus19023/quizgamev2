@@ -20,7 +20,7 @@ var selectGame = ( gameChoice ) => {
         document.documentElement.style.setProperty('--theme', '#fd96e7');
     }
     else if (fileName.includes('325')) {
-        document.documentElement.style.setProperty('--theme', '#a08df6');
+        document.documentElement.style.setProperty('--theme', '#89acfd');
     }
     else if (fileName.includes('352')) {
         document.documentElement.style.setProperty('--theme', '#88ddac');
