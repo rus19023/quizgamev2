@@ -1,3 +1,5 @@
+
+
 body { 
   display: grid;
   grid-template-columns: 1fr;
@@ -5,7 +7,7 @@ body {
 
 img {
   width: 100%;
-  min-width: 450px;
+  max-width: 450px;
   margin-bottom: 1rem;
 }
 
@@ -14,50 +16,49 @@ img {
   padding: 1rem;
 }
 
-.col3 {
-  grid-template-columns: 1fr;
-}
-
-.justify-center {
-  padding: 1rem;
+button {
+  width: 175px;
+  height: 60px;
 }
 
 .col2 {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  padding: 1rem;
 }
 
-.highlight { color: var(--border); font-weight: bold; font-size: 3rem; }
+h2 {
+  font-size: 1.5rem;
+}
+
+.highlight { color: #ffd700; }
 
 .choice-container {
   display: flex;
   margin-bottom: .5rem;
   font-size: 1.5rem;
-  max-width: 750px;
+  border: 0.1rem solid #ffffff;
+  background: #6c7f94;
 }
 
-.choice-container.box:hover {
+.choice-container:hover {
+  border: 0.1rem solid #ffffff;
   cursor: pointer;
   /* box-shadow: 0 0.4rem .7rem 0 #ffffff; */
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
 main {
+  margin-top: .5rem;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 #bonus-text {
-  padding: 2rem;
-  color: var(--theme);
-  border-color: var(--theme);
-  background: var(--border);
-  font-size: 2rem;
+  color: #ffd700;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: auto 0;
 }
 
 ul li, ol li {
@@ -68,22 +69,22 @@ ul li, ol li {
 }
 
 .choice-prefix {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  background: #ffffff;
+  color: #6c7f94;
   text-align: center;
-  max-height: 60px;
-  border: .35rem solid;
+  padding: .5rem .5rem;
+
 }
 
-
 .choice-text {
-  min-width: 400px;
-  margin: .5rem;
-  color: var(--border);
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
+  color: #ffffff;
   font-size: 1em;
   font-weight: bold;
-  padding: 1rem;
 }
 
 .select-game {
@@ -92,58 +93,43 @@ ul li, ol li {
 }
 
 .select-game form select {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
-  padding: 2rem;
-  color:  var( --border);
+  height: 3.5rem;
+  background:#ffffff;
+  color: #6c7f94;
 }
 
 .select-game form select option {
   font-size: 1.75rem;
-  font-weight: bold;
+  color: #ffffff;
+  background: #6c7f94;
 }
 
-.game {
+.question { 
   display: grid;
+  padding: .5rem;
   grid-template-columns: 1fr;
-}
-
-.center { text-align: center;}
-
-.col1 {
-  grid-template-columns: 1fr;
+  font-size: 1.6rem; 
+  color: #ffffff; 
+  margin-bottom: 1rem;
 }
 
 .correct {
-  background: #28a745 !important;
+  background: #28a745;
   color: #ffffff;
 }
 
 .incorrect {
-  background: #c5081b;
+  background: #dc3545;
   color: #ffffff;
 }
 
-#score {
-  color: var(--border);
-}
-
 #explanation, #explanation ul li, #explanation ol li {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  color: yellow;
   list-style: circle;
   padding: 2rem;
-  background: var(--border);
-  color: var(--theme);
-  border-color: var(--theme);
-  height: 75vh;
-}
-
-.question { 
-  padding: 2rem;
-  font-size: 1.5rem;
-  max-width: 900px;
-  text-align: left;
-  height: 75vh;
 }
 
 /* HUD */
@@ -151,7 +137,7 @@ ul li, ol li {
 .hud {
   display: grid;
   grid-template-columns: 1fr;
-  max-height: 5vh;
+  padding: 1rem;
 }
 
 .hud-prefix {
@@ -161,37 +147,27 @@ ul li, ol li {
 
 .hud-main-text {
   text-align: center;
-  padding-top: 1rem;
-}
-
-.hud-item {
-  font-size: 1.7rem;
-  padding-top: 1rem;
-  font-weight: bold;
-  margin-bottom: .5rem;
 }
 
 #progressBar {
-  border: .5rem solid var(--border);
-  margin: 1rem;
+  border: 0.3rem solid #ffffff;
+  margin-top: 1.5rem;
 }
 
 #progressBarFull {
-  border: .5rem solid var(--border);
-  background: var(--border);
-  padding: 1rem 0;
+  height: 2rem;
+  background: #ffffff;
+  width: 0%;
 }
 
 /* LOADER */
 
 #loader {
-  border: 1.6rem solid;
-  border-color: var(--border);
+  border: 1.6rem solid #ffffff;
   border-radius: 50%;
-  border-top: 1.6rem solid var(--theme);
+  border-top: 1.6rem solid #6c7f94;
   width: 12rem;
   height: 12rem;
-  margin: 12rem;
   animation: spin 2s linear infinite;
 }
 
@@ -204,21 +180,12 @@ ul li, ol li {
   }
 }
 
-
-@media (min-width: 60rem) {
-  .col3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+@media (min-width: 30rem) {
   
   .col2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   } 
-
-  .col1 {
-    grid-template-columns: 1fr 1fr;
-  }
   
   .hud {
     grid-template-columns: 2fr 4fr 1fr;
@@ -226,10 +193,5 @@ ul li, ol li {
 
   .col {
     grid-template-columns: 1fr;
-  }
-
-  .game {
-    display: grid;
-    grid-template-columns: 3fr 1fr 3fr;
   }
 }
