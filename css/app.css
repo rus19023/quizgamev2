@@ -3,6 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   width: 100%;
+  --accent: rgb(223, 205, 205);
   --border: #000000;
   --theme: #8b878795;
   --theme241: #d8b066;
@@ -128,9 +129,9 @@ input::placeholder {
   border-radius: 50px;
   margin-bottom: 1rem;
   text-decoration: none;
-  color: var(--theme);
+  color: var(--accent);
   background: var(--border);
-  border-color: var(--theme);
+  border-color: var(--accent);
 }
 
 .btn:hover {
