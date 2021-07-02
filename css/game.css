@@ -44,24 +44,25 @@ img {
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
+
 main {
   display: grid;
   grid-template-columns: 1fr;
 }
 
 #bonus-text {
-  padding: 2rem;
+  padding: 1.5rem;
   color: var(--theme);
   border-color: var(--theme);
   background: var(--border);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   margin-top: auto 0;
 }
 
 ul li, ol li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-left: 1rem;
   line-height: 1.95rem;
   list-style: none;
@@ -72,8 +73,8 @@ ul li, ol li {
   padding: .5rem;
   font-weight: bold;
   text-align: center;
-  max-height: 60px;
-  border: .35rem solid;
+  max-height: 30px;
+  border: .3rem solid;
 }
 
 
@@ -81,7 +82,7 @@ ul li, ol li {
   min-width: 400px;
   margin: .5rem;
   color: var(--border);
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   padding: .5rem;
 }
@@ -92,7 +93,7 @@ ul li, ol li {
 }
 
 .select-game form select {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 1rem;
   color:  var( --border);
@@ -129,18 +130,18 @@ ul li, ol li {
 }
 
 #explanation, #explanation ul li, #explanation ol li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   list-style: circle;
-  padding: 1rem;
+  padding: 1.5rem;
   background: var(--border);
   color: var(--theme);
   border-color: var(--theme);
 }
 
 .question { 
-  padding: 1rem;
-  font-size: 1.5rem;
-  max-width: 900px;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  max-width: 700px;
   text-align: left;
 }
 
@@ -154,7 +155,7 @@ ul li, ol li {
 
 .hud-prefix {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hud-main-text {

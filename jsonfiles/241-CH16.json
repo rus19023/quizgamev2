@@ -894,7 +894,7 @@
             "qnum":"04",
             "question":"When network administrators connect to and configure network devices, which network communications plane is being used?",
             "correct_answer":"The management plane",
-            "incorrect_answers__001":"When network administrators connect to and configure network devices, which network communications plane is being used?<br>The distributed plane",
+            "incorrect_answers__001":"The distributed plane",
             "incorrect_answers__002":"The control plane",
             "incorrect_answers__003":"The data plane",
             "explanation":"The management plane includes various protocols that allow network engineers to connect to and configure network devices. The management plane can be thought of as where the network administrator interacts with the network device.<br>The control plane gathers and stores various information about the network. For example, on this plane, switches use MAC addresses and associated port information to determine where to forward frames. The data plane (also called the forwarding plane) is where tasks or activities related to the main processing of packets is done. This is the plane where packet switching, routing, and interpretation occur.",
