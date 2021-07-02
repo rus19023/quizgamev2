@@ -5,7 +5,7 @@ body {
 
 img {
   width: 100%;
-  min-width: 450px;
+  min-width: 250px;
   margin-bottom: 1rem;
 }
 
@@ -29,13 +29,13 @@ img {
   padding: 1rem;
 }
 
-.highlight { color: var(--border); font-weight: bold; font-size: 3rem; }
+.highlight { color: var(--border); font-weight: bold; font-size: 2rem; }
 
 .choice-container {
   display: flex;
   margin-bottom: .5rem;
-  font-size: 1.5rem;
-  max-width: 750px;
+  font-size: 1rem;
+  max-width: 500px;
 }
 
 .choice-container.box:hover {
@@ -68,8 +68,8 @@ ul li, ol li {
 }
 
 .choice-prefix {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: .5rem;
   font-weight: bold;
   text-align: center;
   max-height: 60px;
@@ -83,7 +83,7 @@ ul li, ol li {
   color: var(--border);
   font-size: 1em;
   font-weight: bold;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .select-game {
@@ -92,14 +92,14 @@ ul li, ol li {
 }
 
 .select-game form select {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 2rem;
+  padding: 1rem;
   color:  var( --border);
 }
 
 .select-game form select option {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -131,19 +131,17 @@ ul li, ol li {
 #explanation, #explanation ul li, #explanation ol li {
   font-size: 1.5rem;
   list-style: circle;
-  padding: 2rem;
+  padding: 1rem;
   background: var(--border);
   color: var(--theme);
   border-color: var(--theme);
-  height: 75vh;
 }
 
 .question { 
-  padding: 2rem;
+  padding: 1rem;
   font-size: 1.5rem;
   max-width: 900px;
   text-align: left;
-  height: 75vh;
 }
 
 /* HUD */
@@ -165,7 +163,7 @@ ul li, ol li {
 }
 
 .hud-item {
-  font-size: 1.7rem;
+  font-size: 1rem;
   padding-top: 1rem;
   font-weight: bold;
   margin-bottom: .5rem;
