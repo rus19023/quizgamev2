@@ -4,31 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Quick Quiz - Start</title>
+    <title>Quiz BYU-I - Start</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/game.css" />
     <link rel="shortcut icon" type="image/png" href="images/quiz.png"/>
   </head>
   <body>
     <header>
-      <div id="heading" class="col2 box"><h3 class="center highlight">Current up to WK 08</h3>
-        <div class="select-game">
-          <form action="POST" action="game.html">
-            <select class="box" name="gameChoice" id="gameChoice" onChange="selectGame()">
-              <option selected value="default">What do you want to study?</option><!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Quick Quiz - Start</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="stylesheet" href="css/game.css" />
-    <link rel="shortcut icon" type="image/png" href="images/quiz.png"/>
-  </head>
-  <body>
-    <header>
-      <div id="heading" class="col2 box"><h3 class="center highlight">Current up to WK 08</h3>
+      <div class="col2 box"><h3 class="center highlight">Current up to WK 08</h3>
         <div class="select-game">
           <form action="POST" action="game.html">
             <select class="box" name="gameChoice" id="gameChoice" onChange="selectGame()">
@@ -60,7 +43,7 @@
             <div id="progressBarFull" class=""></div>
           </div>
         </div>
-        <div id="bonus-text" class="box">Watch for BONUS info here!</div>
+        <div id="bonus-text" class="box"></div>
         <div class="hud-item box">
           <p class="hud-prefix">
             Score
@@ -80,90 +63,19 @@
                 <div></div>
                 <button id="next-button" type="button" class="btn hidden" onclick="getNewQuestion()">Next</button>
               </div>  
-              <div id="a" class="choice-container box">
+              <div class="choice-container box">
                 <p class="choice-prefix box">A</p>
                 <p class="choice-text" data-number="1"></p>
               </div>
-              <div id="b" class="choice-container box">
+              <div class="choice-container box">
                 <p class="choice-prefix box">B</p>
                 <p class="choice-text" data-number="2"></p>
               </div>
-              <div id="c" class="choice-container box">
+              <div class="choice-container box">
                 <p class="choice-prefix box">C</p>
                 <p class="choice-text" data-number="3"></p>
               </div>
-              <div id="d" class="choice-container box">
-                <p class="choice-prefix box">D</p>
-                <p class="choice-text" data-number="4"></p>
-              </div>
-            </div>
-      </div>                    
-      <div id="">
-        <div id="explanation" class="hidden box"></div>
-      </div>
-    </main>
-    <script src="js/game.js"></script>
-  </body>
-</html>
-
-              <option value="241-FINAL.json">241-FINAL</option>
-              <option value="270-FINAL.json">270-FINAL</option>
-              <option value="325-FINAL.json">325-FINAL</option>
-              <option value="352-FINAL.json">352-FINAL</option>
-              <option value="270-EXAM2.json">270-EXAM2</option>
-              <option value="352-EXAM2.json">352-EXAM2</option>
-              <option value="241-CH15.json">241-CH15</option>
-              <option value="241-EXAM1.json">241-EXAM1</option>
-              <option value="270-EXAM1.json">270-EXAM1</option>
-              <option value="352-EXAM1.json">352-EXAM1</option>
-              <option value="https://opentdb.com/api.php?amount=30&category=9&difficulty=easy">TRIVIA-EASY</option>
-              <option value="https://opentdb.com/api.php?amount=30&category=9&difficulty=medium">TRIVIA-MEDIUM</option>
-              <option value="https://opentdb.com/api.php?amount=30&category=9&difficulty=hard">TRIVIA-HARD</option>
-            </select>
-          </form>
-        </div>
-      </div>
-      <div id="hud" class="box col3">
-        <div class="hud-item box">
-          <p id="progressText" class="hud-prefix ">              
-          </p>
-          <div id="progressBar" class="box">
-            <div id="progressBarFull" class=""></div>
-          </div>
-        </div>
-        <div id="bonus-text" class="box">Watch for BONUS info here!</div>
-        <div class="hud-item box">
-          <p class="hud-prefix">
-            Score
-          </p>
-          <h2 class="hud-main-text  " id="score">
-            0
-          </h1>
-        </div>
-      </div>
-    </header>
-    <main class="col3">
-      <div id="loader"></div>
-      <div id="question" class="question box"><h1>Please select a quiz from the dropdown list.</h1></div>
-      <div id="game" class="justify-center box hidden">
-            <div class="col1">       
-              <div class="center">
-                <div></div>
-                <button id="next-button" type="button" class="btn hidden" onclick="getNewQuestion()">Next</button>
-              </div>  
-              <div id="a" class="choice-container box">
-                <p class="choice-prefix box">A</p>
-                <p class="choice-text" data-number="1"></p>
-              </div>
-              <div id="b" class="choice-container box">
-                <p class="choice-prefix box">B</p>
-                <p class="choice-text" data-number="2"></p>
-              </div>
-              <div id="c" class="choice-container box">
-                <p class="choice-prefix box">C</p>
-                <p class="choice-text" data-number="3"></p>
-              </div>
-              <div id="d" class="choice-container box">
+              <div class="choice-container box">
                 <p class="choice-prefix box">D</p>
                 <p class="choice-text" data-number="4"></p>
               </div>
