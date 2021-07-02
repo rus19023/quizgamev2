@@ -73,7 +73,8 @@ ul li, ol li {
   padding: .25rem;
   font-weight: bold;
   text-align: center;
-  max-height: 30px;
+  height: .75rem;
+  width: .75rem;
   border: .3rem solid;
 }
 
