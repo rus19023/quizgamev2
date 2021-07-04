@@ -4,13 +4,16 @@
   font-size: 12px;
   width: 100%;
   --accent: rgb(223, 205, 205);
+  --accent2: rgb(224, 224, 224);
   --border: #000000;
   --theme: #8b878795;
-  --theme241: #d8b066;
+  --theme241: #f3b84b;
   --theme270: #fd96e7;
-  --theme325: #a08df6;
+  --theme325: #8c95eb;
   --theme352: #88ddac;
-  --theme240: #eb9eda;
+  --theme240: #82c2db;
+  --theme353: #cbf076;
+  --theme341: #ebb09e;
 }
 
 * {
@@ -25,15 +28,8 @@
 
 p { font-size: 1rem;}
 
-h1,
-h2,
-h3,
-h4 {
-  margin-bottom: .5rem;
-}
-
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color:  var( --border);
 }
 
@@ -43,13 +39,12 @@ h1 > span {
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 4rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 

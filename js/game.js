@@ -55,7 +55,7 @@ var selectGame = ( gameChoice ) => {
     /* CONSTANTS  */
     const CORRECT_BONUS = 100;
     const CORRECT_POINTS = 10;
-    const MAX_QUESTIONS = 30;
+    const MAX_QUESTIONS = 40;
 
     var startGame = () => {
         questionCounter = 0;
@@ -201,7 +201,7 @@ var selectGame = ( gameChoice ) => {
                 }  //  end of if lastcorrect
             } else {  // if not correct  
                 explanation.classList.remove('hidden');           
-                explanation.innerHTML = "Explanation or correct answer: <br>" + currentQuestion.explanation;
+                explanation.innerHTML = "Explanation or correct answer: <br><br>" + currentQuestion.explanation;
                 // set number of consecutive correct answers back to zero
                 consecutiveCorrect = 0;
                 // set last answer correct to false so it won't be counted for consecutive bonus
