@@ -131,7 +131,7 @@ input::placeholder {
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 .rem .7rem 0 #ffd9d9;
+  box-shadow: 0 .25rem .7rem 0 #ffd9d9;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }

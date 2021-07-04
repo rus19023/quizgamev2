@@ -64,7 +64,7 @@ main {
 #bonus-text {
   padding: 1.2rem;
   color: var(--accent2);
-  border-color: var(--theme);
+  border-color: var(--accent2);
   background: var(--border);
   font-size: 1.2rem;
   font-weight: bold;
