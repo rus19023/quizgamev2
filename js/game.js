@@ -134,6 +134,7 @@ var selectGame = ( gameChoice ) => {
         progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`;
         //Update the progress bar
         progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+        progressBarFull.style.height = '2.5rem';
         // Randomly choose one of the questions left in the list
         const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];

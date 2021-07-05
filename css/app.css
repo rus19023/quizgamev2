@@ -125,7 +125,7 @@ input::placeholder {
   padding: 1.5rem;
   text-align: center;
   border-radius: 50px;
-  margin-bottom: 1rem;
+  margin: 1rem;
   text-decoration: none;
   color: var(--accent);
   background: var(--border);
@@ -151,4 +151,9 @@ input::placeholder {
   border: .35rem solid;
   border-color:  var(--border);
   border-radius: 50px;
+}
+
+.nobox {
+  background: transparent;
+  border-color: transparent;
 }
