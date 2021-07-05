@@ -273,7 +273,7 @@
             "incorrect_answers__001":"show ipv6 eigrp interfaces",
             "incorrect_answers__002":"show ipv6 route",
             "incorrect_answers__0 03":"show ipv6 protocols",
-            "explanation":"The show ipv6 eigrp topology command can be used to display the EIGRPv6 topology, including successor information.<br><br><br><br>The show ipv6 eigrp interfaces command displays statistics for each interface on the router running EIGRPv6. The show ipv6 protocols command displays the current state of the IPv6 routing protocol processes running on the router. The show ipv6 route command displays the contents of the IPv6 routing table. The show ipv6 eigrp neighbors command can be used to display a list of neighboring EIGRPv6 routers.",
+            "explanation":"The show ipv6 eigrp topology command can be used to display the EIGRPv6 topology, including successor information.<br><br>The show ipv6 eigrp interfaces command displays statistics for each interface on the router running EIGRPv6. <br><br>The show ipv6 protocols command displays the current state of the IPv6 routing protocol processes running on the router.<br><br> The show ipv6 route command displays the contents of the IPv6 routing table. <br><br>The show ipv6 eigrp neighbors command can be used to display a list of neighboring EIGRPv6 routers.",
             "incorrect_answers":["show ipv6 eigrp interfaces","show ipv6 route","show ipv6 protocols"],
             "correct_answers":null,
             "answer1":"show ipv6 eigrp topology",

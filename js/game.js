@@ -11,7 +11,7 @@ var selectGame = ( gameChoice ) => {
         jsonFile = fileName;
     }
     if (fileName.includes('240')) {
-        document.documentElement.style.setProperty('--theme', '#eb9eda');
+        document.documentElement.style.setProperty('--theme', '#84fbff');
     }
     else if (fileName.includes('241')) {
             document.documentElement.style.setProperty('--theme', '#d8b066');
@@ -223,6 +223,6 @@ var selectGame = ( gameChoice ) => {
 
     let incrementScore = (num) => {
         score += num;
-        scoreText.innerHTML = 'Total points: ' + score + '<br>Consecutive correct: ' + consecutiveCorrect + '<br> Bonuses Received: ' + bonusesReached;
+        scoreText.innerHTML = '<div><table><tr><td>Total points: </td><td class="right points">' + score + '</tr><tr><td>Consecutive correct: </td><td class="right consec">' + consecutiveCorrect + '</tr><tr><td> Bonuses Received: </td><td class="right bonuses">' + bonusesReached + ' </td></tr></table></div>';
     };
 };

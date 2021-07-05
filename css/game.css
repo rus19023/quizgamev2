@@ -61,6 +61,18 @@ main {
   grid-template-columns: 1fr;
 }
 
+td {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.right {text-align: center;}
+.points {color: var(--accent5);}
+.consec {color: var(--accent3);}
+.bonuses {color: var(--accent4);}
+
+table {margin-left: auto; margin-right: auto;}
+
 #bonus-text {
   padding: 1.2rem;
   color: var(--accent2);

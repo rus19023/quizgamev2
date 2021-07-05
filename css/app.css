@@ -5,13 +5,16 @@
   width: 100%;
   --accent: rgb(223, 205, 205);
   --accent2: rgb(224, 224, 224);
+  --accent3: rgb(167, 0, 0);
+  --accent4: rgb(0, 119, 16);
+  --accent5: rgb(117, 0, 146);
   --border: #000000;
   --theme: #8b878795;
   --theme241: #f3b84b;
   --theme270: #fd96e7;
   --theme325: #8c95eb;
   --theme352: #88ddac;
-  --theme240: #82c2db;
+  --theme240: #84fbff;
   --theme353: #cbf076;
   --theme341: #ebb09e;
 }
