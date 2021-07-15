@@ -54,8 +54,8 @@ var selectGame = ( gameChoice ) => {
 
     /* CONSTANTS  */
     const CORRECT_BONUS = 100;
-    const CORRECT_POINTS = 10;
-    const MAX_QUESTIONS = 40;
+    const CORRECT_POINTS = 100;
+    const MAX_QUESTIONS = 30;
 
     var startGame = () => {
         questionCounter = 0;
@@ -133,7 +133,7 @@ var selectGame = ( gameChoice ) => {
         questionCounter++;
         progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`;
         //Update the progress bar
-        progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+        progressBarFull.style.width = `${((questionCounter / MAX_QUESTIONS) * 100)}%`;
         progressBarFull.style.height = '2.5rem';
         // Randomly choose one of the questions left in the list
         const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -177,9 +177,8 @@ var selectGame = ( gameChoice ) => {
                     // start feedback selection, show bonus text to give feedback when consecutive count is multiple of 4
                     switch (consecutiveCorrect > 0 && consecutiveCorrect % 4) {
                         case 0:
-                            bonusText = "You did it!!!   You got the bonus!";
-                            //incrementScore(CORRECT_BONUS * 4);                    
-                            incrementScore(CORRECT_BONUS * 5 * bonusesReached);
+                            bonusText = "You did it!!!   You got the bonus!";      
+                            incrementScore(CORRECT_BONUS * 50 * bonusesReached);
                             bonusesReached++;
                             break;
                         case 1:

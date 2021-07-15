@@ -204,6 +204,8 @@ ul li, ol li {
 
 #progressBarFull {
   background: var(--border);
+  min-width: 7%;
+  max-width: 100%;
   border-radius: 50px;
   margin-left: -.05rem;
   margin-top: -.1rem;
