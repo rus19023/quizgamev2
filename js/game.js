@@ -11,7 +11,7 @@ var selectGame = ( gameChoice ) => {
         jsonFile = fileName;
     }
     if (fileName.includes('240')) {
-        document.documentElement.style.setProperty('--theme', '#eb9eda');
+        document.documentElement.style.setProperty('--theme', '#84fbff');
     }
     else if (fileName.includes('241')) {
             document.documentElement.style.setProperty('--theme', '#d8b066');
@@ -55,7 +55,7 @@ var selectGame = ( gameChoice ) => {
     /* CONSTANTS  */
     const CORRECT_BONUS = 100;
     const CORRECT_POINTS = 10;
-    const MAX_QUESTIONS = 30;
+    const MAX_QUESTIONS = 40;
 
     var startGame = () => {
         questionCounter = 0;
@@ -134,6 +134,7 @@ var selectGame = ( gameChoice ) => {
         progressText.innerHTML = `Question ${questionCounter}/${MAX_QUESTIONS}`;
         //Update the progress bar
         progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+        progressBarFull.style.height = '2.5rem';
         // Randomly choose one of the questions left in the list
         const questionIndex = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionIndex];
@@ -201,7 +202,7 @@ var selectGame = ( gameChoice ) => {
                 }  //  end of if lastcorrect
             } else {  // if not correct  
                 explanation.classList.remove('hidden');           
-                explanation.innerHTML = "Explanation or correct answer: <br>" + currentQuestion.explanation;
+                explanation.innerHTML = "Explanation or correct answer: <br><br>" + currentQuestion.explanation;
                 // set number of consecutive correct answers back to zero
                 consecutiveCorrect = 0;
                 // set last answer correct to false so it won't be counted for consecutive bonus
@@ -223,6 +224,6 @@ var selectGame = ( gameChoice ) => {
 
     let incrementScore = (num) => {
         score += num;
-        scoreText.innerHTML = 'Total points: ' + score + '<br>Consecutive correct: ' + consecutiveCorrect + '<br> Bonuses Received: ' + bonusesReached;
+        scoreText.innerHTML = '<div><table><tr><td>Total points: </td><td class="right points">' + score + '</tr><tr><td>Consecutive correct: </td><td class="right consec">' + consecutiveCorrect + '</tr><tr><td> Bonuses Received: </td><td class="right bonuses">' + bonusesReached + ' </td></tr></table></div>';
     };
 };

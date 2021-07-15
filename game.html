@@ -11,22 +11,24 @@
   </head>
   <body>
     <header>
-      <div class="col2 box"><h3 class="center highlight">Current up to WK 08</h3>
+      <div class="col2 box"><h3 class="center highlight">Current up to WK 11</h3>
         <div class="select-game">
           <form action="POST" action="game.html">
             <select class="box" name="gameChoice" id="gameChoice" onChange="selectGame()">
               <option selected value="default">What do you want to study?</option>
+              <option value="270-EXAM3.json">270-EXAM3</option>
+              <option value="241-EXAM3.json">241-EXAM3</option>
               <option value="241-FINAL.json">241-FINAL</option>
-              <option value="241-CH15.json">241-CH15</option>
-              <option value="241-CH16.json">241-CH16</option>
-              <option value="241-QUIZ6.json">241-QUIZ6</option>
-              <option value="241-QUIZ7.json">241-QUIZ7</option>
               <option value="270-FINAL.json">270-FINAL</option>
               <option value="325-FINAL.json">325-FINAL</option>
               <option value="352-FINAL.json">352-FINAL</option>
+              <option value="241-CH16.json">241-CH16</option>
+              <option value="241-CH15.json">241-CH15</option>
+              <option value="241-CH1516.json">241-CH1516</option>
+              <option value="241-QUIZ6.json">241-QUIZ6</option>
+              <option value="241-QUIZ7.json">241-QUIZ7</option>
               <option value="270-EXAM2.json">270-EXAM2</option>
               <option value="352-EXAM2.json">352-EXAM2</option>
-              <option value="241-CH15.json">241-CH15</option>
               <option value="241-EXAM1.json">241-EXAM1</option>
               <option value="270-EXAM1.json">270-EXAM1</option>
               <option value="352-EXAM1.json">352-EXAM1</option>
@@ -45,10 +47,10 @@
             <div id="progressBarFull" class=""></div>
           </div>
         </div>
-        <div id="bonus-text" class="box"></div>
+        <div id="bonus-text" class="box">See your bonus info here!</div>
         <div class="hud-item box">
           <p class="hud-prefix">
-            Score
+            SCORE
           </p>
           <h2 class="hud-main-text  " id="score">
             0
@@ -59,7 +61,7 @@
     <main class="col3">
       <div id="loader"></div>
       <div id="question" class="question box"><h1>Please select a quiz from the dropdown list.</h1></div>
-      <div id="game" class="justify-center box hidden">
+      <div id="game" class="justify-center nobox hidden">
             <div class="col1">       
               <div class="center">
                 <div></div>
