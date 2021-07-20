@@ -93,15 +93,10 @@ var selectGame = ( gameChoice ) => {
                 };
                 // use the question if the category is correct
 
-                // set variable for correct answer
-                let correctAnswer = loadedQuestion.correct_answer;
-                if (loadedQuestion.correct_answer.includes('True') || correctAnswer.includes('False')) {
-                    numAnswers = 2;
-                } else {
-                    numAnswers = 4;
-                }
+           
                 questions = loadedQuestions;
                 const answerChoices = [...loadedQuestion.incorrect_answers];
+                numAnswers = answerChoices.length;
                 formattedQuestion.answer = Math.floor(Math.random() * numAnswers) + 1;
                 answerChoices.splice(
                     formattedQuestion.answer - 1,
