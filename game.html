@@ -11,18 +11,18 @@
   </head>
   <body>
     <header>
-      <div class="col2 box"><h3 class="center highlight">Current up to WK 11</h3>
+      <div id="select-container" class="col2 box"><h3 class="center highlight">Current up to WK 11</h3>
         <div class="select-game">
           <form action="POST" action="game.html">
             <select class="box" name="gameChoice" id="gameChoice" onChange="selectGame()">
               <option selected value="
               default">What do you want to study?</option>
-              <option value="270-EXAM3.json">270-EXAM3</option>
-              <option value="241-EXAM3.json">241-EXAM3</option>
               <option value="241-FINAL.json">241-FINAL</option>
               <option value="270-FINAL.json">270-FINAL</option>
               <option value="325-FINAL.json">325-FINAL</option>
               <option value="352-FINAL.json">352-FINAL</option>
+              <option value="270-EXAM3.json">270-EXAM3</option>
+              <option value="241-EXAM3.json">241-EXAM3</option>
               <option value="241-CH16.json">241-CH16</option>
               <option value="241-CH15.json">241-CH15</option>
               <option value="241-CH1516.json">241-CH1516</option>
@@ -42,7 +42,7 @@
       </div>
       <div id="hud" class="box col3">
         <div class="hud-item box">
-          <p id="progressText" class="hud-prefix ">              
+          <p id="progressText" class="hud-prefix">              
           </p>
           <div id="progressBar" class="box">
             <div id="progressBarFull" class=""></div>
@@ -53,7 +53,7 @@
           <p class="hud-prefix">
             SCORE
           </p>
-          <h2 class="hud-main-text  " id="score">
+          <h2 class="hud-main-text" id="score">
             0
           </h1>
         </div>
@@ -68,28 +68,22 @@
                 <div></div>
                 <button id="next-button" type="button" class="btn hidden" onclick="getNewQuestion()">Next</button>
               </div>  
-              <div class="choice-container box">
-                <p class="choice-prefix box">A</p>
+              <div id="box1" class="choice-container box">
                 <p class="choice-text" data-number="1"></p>
               </div>
-              <div class="choice-container box">
-                <p class="choice-prefix box">B</p>
+              <div id="box2" class="choice-container box">
                 <p class="choice-text" data-number="2"></p>
               </div>
-              <div class="choice-container box">
-                <p class="choice-prefix box">C</p>
+              <div id="box3" class="choice-container box">
                 <p class="choice-text" data-number="3"></p>
               </div>
-              <div class="choice-container box">
-                <p class="choice-prefix box">D</p>
+              <div id="box4" class="choice-container box">
                 <p class="choice-text" data-number="4"></p>
               </div>
-              <div class="choice-container box">
-                <p class="choice-prefix box">E</p>
+              <div id="box5" class="choice-container box hidden">
                 <p class="choice-text" data-number="5"></p>
               </div>
-              <div class="choice-container box">
-                <p class="choice-prefix box">F</p>
+              <div id="box6" class="choice-container box hidden">
                 <p class="choice-text" data-number="6"></p>
               </div>
             </div>

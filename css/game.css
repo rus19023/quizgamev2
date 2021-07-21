@@ -233,6 +233,10 @@ ul li, ol li {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 
 @media (min-width: 900px) {
   body {

@@ -44,6 +44,9 @@ var selectGame = ( gameChoice ) => {
     let availableQuestions = [];
     let bonusText = 'Go get your name on the leaderboard!';
     let bonus = document.getElementById('bonus-text');
+    let box5 = document.getElementById('box5');
+    let box6 = document.getElementById('box6');
+    let selectbox = document.getElementById('select_container');
     let bonusesReached = 1;
     let numAnswers = 0;
     //const jsonFileName = 'CIT241-EXAM2';
@@ -61,6 +64,7 @@ var selectGame = ( gameChoice ) => {
         questionCounter = 0;
         score = 0;
         availableQuestions = [...questions];
+        console.log(availableQuestions);
         getNewQuestion();
         game.classList.remove('hidden');
         loader.classList.add('hidden');
@@ -97,6 +101,12 @@ var selectGame = ( gameChoice ) => {
                 questions = loadedQuestions;
                 const answerChoices = [...loadedQuestion.incorrect_answers];
                 numAnswers = answerChoices.length;
+                /*if (numAnswers == 5) {
+                    box5.classList.remove('hidden');
+                }  
+                if (numAnswers == 6) {
+                    box6.classList.remove('hidden');
+                }  */
                 formattedQuestion.answer = Math.floor(Math.random() * numAnswers) + 1;
                 answerChoices.splice(
                     formattedQuestion.answer - 1,
@@ -117,7 +127,8 @@ var selectGame = ( gameChoice ) => {
     getNewQuestion = () => {            
         explanation.innerHTML = ""; 
         explanation.classList.add('hidden'); 
-        nextButton.classList.add('hidden'); 
+        nextButton.classList.add('hidden');
+        //selectbox.classList.add('hidden'); 
         // if number of questions is maxed out, save score and end game
         if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
             localStorage.setItem('mostRecentScore', score);
@@ -196,7 +207,7 @@ var selectGame = ( gameChoice ) => {
                 }  //  end of if lastcorrect
             } else {  // if not correct  
                 explanation.classList.remove('hidden');           
-                explanation.innerHTML = "Explanation or correct answer: <br><br>" + currentQuestion.explanation;
+                explanation.innerHTML = "Explanation or correct answer: <br><br>" +  currentQuestion.correct + "<BR><BR>********** " + currentQuestion.explanation;
                 // set number of consecutive correct answers back to zero
                 consecutiveCorrect = 0;
                 // set last answer correct to false so it won't be counted for consecutive bonus
