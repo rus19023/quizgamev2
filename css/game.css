@@ -206,7 +206,7 @@ ul li, ol li {
   background: var(--border);
   min-width: 7%;
   max-width: 100%;
-  border-radius: 50px;
+  border-radius:30px;
   margin-left: -.05rem;
   margin-top: -.1rem;
 }
