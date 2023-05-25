@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Quiz BYU-I - Start</title>
+    <title>Quiz BYU-I Society of Cybersecurity- Start</title>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/game.css" />
     <link rel="shortcut icon" type="image/png" href="images/quiz.png"/>
   </head>
   <body>
     <header>
-      <div id="select-container" class="col2 box"><h3 class="center highlight">Current up to WK 11</h3>
+      <div id="select-container" class="col2 box"><h3 class="center highlight">Version 2.1</h3>
         <div class="select-game">
           <form action="POST" action="game.html">
             <select class="box" name="gameChoice" id="gameChoice" onChange="selectGame()">
-              <option selected value="
-              default">What do you want to study?</option>
-              <option value="241-FINAL.json">241-FINAL</option>
+              <option selected value="default">What do you want to play?</option>
+              <option value="cyberEasy.json">Cybersecurity-Easy</option>
+              <option value="cyberMedium.json">Cybersecurity-Medium</option>
+              <option value="cyberHard.json">Cybersecurity-Hard</option>
+              <!-- <option value="241-FINAL.json">241-FINAL</option>
               <option value="270-FINAL.json">270-FINAL</option>
               <option value="325-FINAL.json">325-FINAL</option>
               <option value="352-FINAL.json">352-FINAL</option>
@@ -32,7 +34,7 @@
               <option value="352-EXAM2.json">352-EXAM2</option>
               <option value="241-EXAM1.json">241-EXAM1</option>
               <option value="270-EXAM1.json">270-EXAM1</option>
-              <option value="352-EXAM1.json">352-EXAM1</option>
+              <option value="352-EXAM1.json">352-EXAM1</option> -->
               <option value="https://opentdb.com/api.php?amount=30&category=9&difficulty=easy">TRIVIA-EASY</option>
               <option value="https://opentdb.com/api.php?amount=30&category=9&difficulty=medium">TRIVIA-MEDIUM</option>
               <option value="https://opentdb.com/api.php?amount=30&category=9&difficulty=hard">TRIVIA-HARD</option>
